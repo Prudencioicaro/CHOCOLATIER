@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Monsieur+La+Doulaise&family=Pinyon+Script&display=swap');
+
+:root {
+    --cor-preta: #000000;
+    --cor-marrom: #A47350;
+    --cor-branca: #ffffff;
+    --cor-cinza: #cccccc;
+    --cor-verde: #25B825;
+    --fonte-Arizona: 'Arizonia', cursive;
+    --fonte-Monsieur: 'Monsieur La Doulaise', cursive;
+    --fonte-Pinyon: 'Pinyon Script', cursive;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cor-preta);
+    padding: 10px; /* Adicione algum espaçamento conforme necessário */
+}
+.menu-burger {
+    cursor: pointer;
+}
+.menu-burger div {
+    width: 35px;
+    height: 5px;
+    background-color: var(--cor-branca);
+    margin: 6px 0;
+}
+.cabecalho p {
+    flex-grow: 1; /* Faz o parágrafo ocupar o espaço restante */
+    color: var(--cor-branca);
+    font-family: var(--fonte-Pinyon);
+    font-size: 55px;
+}
+.cabecalho_nav a{
+    text-decoration: none;
+    color: var(--cor-branca);
+    margin: 10px;
+    font-size: 20px;
+}
+.cabecalho_nav a:active{
+    text-decoration: underline;
+}
+body {
+    background-color: var(--cor-marrom);
+    background-image: url(../Assets/_img_\ Caixa\ Bobom.svg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    margin-bottom: 85px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.principal {
+    margin: 30px 30px 30px 0;
+}
+.principal h1 {
+    font-family: var(--fonte-Pinyon);
+    font-size: 100px;
+}
+.principal h2{
+    font-size: 40px;
+    color: var(--cor-branca);
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 1150px;
+}
+.principal p {
+    color: var(--cor-branca);
+    width: 860px; /* Defina o valor desejado para a largura */
+    font-size: 20px;
+}
+.oferta-antiga {
+    color: var(--cor-cinza);
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-decoration: line-through;
+}
+hr {
+    width: 120px;
+    margin-left: 0;
+}
+.oferta-valida {
+    font-size: 50px;
+    color: var(--cor-branca);
+}
+.assinatura {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+}
+.assinatura-botao, .botao_rodape {
+    margin: 20px 20px 20px 0;
+    width: 270px;
+    height: 60px;
+    border-radius: 50px;
+    color: var(--cor-branca);
+    background-color: var(--cor-verde);
+    font-size: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.assinatura-botao:hover, .botao_rodape:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.botao_rodape {
+    width: 600px;
+}
+@media screen and (max-width: 1400px) {
+    .cabecalho p {
+      font-size: 40px;
+    }
+    .cabecalho_nav a{
+        font-size: 18px;
+    }
+    body {
+        background-size: 60%;
+    }
+    .principal h1{
+        font-size: 50px;
+    }
+    .principal h2{
+        font-size: 30px;
+        width: 850px;
+    }
+    .principal p{
+        font-size: 15px;
+        width: 620px;
+    }
+    .oferta-antiga{
+        font-size: 20px;
+    }
+    hr{
+        width: 90px;
+    }
+    .oferta-valida{
+        font-size: 35px;
+    }
+    .assinatura-botao {
+        font-size: 20px;
+        width: 200px;
+    }
+    .assinatura {
+        font-size: 30px;
+    }
+    .contador {
+        width: 40%;
+    }
+    .botao_rodape {
+        font-size: 20px;
+        width: 400px;
+    }
+  }
